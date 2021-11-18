@@ -30,12 +30,12 @@ function Main() {
     return (
         <div className="row d-flex justify-content-center">
             <div className="col-10 row">
-                <div className="col-8">
+                <div className="col-12 col-md-8">
                     <Genres books={books}/>
                     {/* Side bar goes here */}
                     
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                     <SideContent books={books}/>
                 </div>
             </div>
