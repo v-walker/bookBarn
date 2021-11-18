@@ -7,7 +7,6 @@ function BookSection(props) {
     // console.log(bookArray);
     let firstSixBooks = bookArray.slice(0, 6)
     
-
     return (
         <>
             <div className = "container">
@@ -18,7 +17,7 @@ function BookSection(props) {
                     {firstSixBooks.map((obj, index) => {
                         return (
                             <div className="col-2" key={index}>
-                                <BookCard title = {obj.title} author = {obj.author} imgURL = {obj.imageLink}/>
+                                <BookCard title = {obj.title} author = {obj.author} imgURL = {obj.imageLink} link={obj.link}/>
                             </div>
                         )
                     })}

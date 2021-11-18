@@ -12,7 +12,7 @@ function Genres(props) {
         <div className="col-12">
             <h3 className="mt-5">Genres</h3>
             <div className="container">
-                <Form className="bg-light ps-2 pt-2 pb-2 pe-5">
+                <Form className="bg-light-gray ps-2 pt-2 pb-2 pe-5 rounded">
                         <Form.Group>
                             <FormControl
                             type="search"

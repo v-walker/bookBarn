@@ -11,7 +11,7 @@ function BarnNav(props) {
     let {name, link1, link2, link3, link4, link5, link6} = props
     
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className="bg-light-gray" expand="lg">
             <Container fluid>
                 <Navbar.Brand href="/">{name}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

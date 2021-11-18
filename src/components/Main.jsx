@@ -26,8 +26,7 @@ function Main() {
     useEffect(() => {
         console.log(books);
     });
-    
-    
+
     return (
         <div className="row d-flex justify-content-center">
             <div className="col-10 row">
