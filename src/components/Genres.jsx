@@ -1,31 +1,11 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import BookSection from './BookSection'
 
-function Genres() {
-    const [books, setBooks] = useState([])
-    
-    useEffect(() => {
-
-        const bookData = async () => {
-            let response = await fetch("https://raw.githubusercontent.com/benoitvallon/100-best-books/master/books.json")
-
-            let data = await response.json();
-
-            setBooks(data)
-        }
-
-        bookData();
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
-    
-
-    useEffect(() => {
-        console.log(books);
-    });
+function Genres(props) {
+    let {books} = props
 
     return (
         
