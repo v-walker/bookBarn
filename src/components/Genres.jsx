@@ -21,7 +21,7 @@ function Genres(props) {
                             aria-label="Search for Author"
                             />
                         </Form.Group>
-                        <Button className="mt-2" variant="outline-primary">Find Author</Button>
+                        <Button className="mt-2" variant="outline-secondary">Find Author</Button>
                 </Form>
             </div>
             {/* End of Search Section */}

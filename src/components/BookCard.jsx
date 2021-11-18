@@ -7,7 +7,7 @@ function BookCard(props) {
     let {title, author, imgURL, link} = props
     
     return (
-        <Card style={{height: '18rem'}} className="mb-2">
+        <Card style={{height: '18rem'}} className="mb-2 bookCard">
             <Card.Img variant="top" height="150px" src={`https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/${imgURL}`} />
             <Card.Body>
                 <Card.Title style={{fontSize: '0.7rem'}}>{title}</Card.Title>
