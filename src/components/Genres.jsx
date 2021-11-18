@@ -29,7 +29,7 @@ function Genres() {
 
     return (
         
-        <div className="col-8">
+        <div className="col-12">
             <h3 className="mt-5">Genres</h3>
             <div className="container">
                 <Form className="bg-light ps-2 pt-2 pb-2 pe-5">
