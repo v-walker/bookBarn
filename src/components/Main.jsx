@@ -1,42 +1,33 @@
 import React from 'react';
-import { useState, useEffect } from "react";
 import Genres from './Genres';
 import SideContent from './SideContent';
 
 
-function Main() {
-    const [books, setBooks] = useState([])
-    
-    useEffect(() => {
+function Main(props) {
+    let books = props.books
 
-        const bookData = async () => {
-            let response = await fetch("https://raw.githubusercontent.com/benoitvallon/100-best-books/master/books.json")
+    function getLanguagesArray() {
+        let languagesArray = [];
 
-            let data = await response.json();
+        books.forEach((bookObj) => {
+            if (!languagesArray.includes(bookObj.language)) {
+                languagesArray.push(bookObj.language)
+            }
+        })
+        return languagesArray
+    }
 
-            setBooks(data)
-        }
-
-        bookData();
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
-    
-
-    useEffect(() => {
-        console.log(books);
-    });
+    console.log(getLanguagesArray());
 
     return (
         <div className="row d-flex justify-content-center">
             <div className="col-10 row">
                 <div className="col-12 col-md-8">
-                    <Genres books={books}/>
-                    {/* Side bar goes here */}
+                    <Genres books={books} languagesArray={getLanguagesArray()}/>
                     
                 </div>
                 <div className="col-12 col-md-4">
-                    <SideContent books={books}/>
+                    <SideContent languagesArray={getLanguagesArray()}/>
                 </div>
             </div>
                 

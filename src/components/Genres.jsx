@@ -5,7 +5,8 @@ import Button from 'react-bootstrap/Button';
 import BookSection from './BookSection'
 
 function Genres(props) {
-    let {books} = props
+    // let {books, languagesArray} = props
+    let books = props.books
 
     return (
         
@@ -27,6 +28,8 @@ function Genres(props) {
             {/* End of Search Section */}
 
             <BookSection bookArray={books} title="100 Best Books of All Time" linkName="top 100 books"/>
+
+            {/* refactor to map through languagesArray for all of these below */}
 
             <BookSection bookArray={books.filter(book => book.language === "English")} title="English Books" linkName="English books"/>
             
