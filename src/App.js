@@ -7,11 +7,11 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <>
+    <div className="row m-0 p-0">
       <BarnNav name="BookBarn" link1="Home" link2="MyBooks" link3="Browse" link4 ="Community" link5="Sign In" link6="Join"/>
       <Header />
       <Main />
-    </>
+    </div>
   );
 }
 

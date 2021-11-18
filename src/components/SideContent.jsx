@@ -30,7 +30,7 @@ function SideContent(props) {
                 <div className="ms-2 row">
                     {getLanguagesArray().map((language, index) => {
                         return (
-                            <span className="col-6 mt-2 mb-2"><a href="#/">{language}</a></span>
+                            <span className="col-12 col-md-6 mt-2 mb-2"><a href="#/">{language}</a></span>
                         )
                     })}
                 </div>

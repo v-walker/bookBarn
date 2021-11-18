@@ -16,7 +16,7 @@ function BookSection(props) {
 
                     {firstSixBooks.map((obj, index) => {
                         return (
-                            <div className="col-2" key={index}>
+                            <div className="col-10 col-sm-6 col-md-4 col-lg-2" key={index}>
                                 <BookCard title = {obj.title} author = {obj.author} imgURL = {obj.imageLink} link={obj.link}/>
                             </div>
                         )
